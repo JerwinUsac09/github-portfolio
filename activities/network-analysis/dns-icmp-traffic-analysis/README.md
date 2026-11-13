@@ -2,68 +2,57 @@
 
 ## Overview
 
-A simulated network troubleshooting activity completed as part of the Google Cybersecurity Certificate.
+This activity demonstrates basic network traffic analysis using tcpdump as part of the Google Cybersecurity Certificate training.
+
+The exercise involved investigating a connectivity issue affecting users who could not access a company website.
 
 ## Objective
 
-Analyze network traffic captured using tcpdump to identify the protocol and service affected by a connectivity issue.
+Analyze captured network traffic to identify the affected network service, interpret DNS and ICMP messages, and determine possible causes of the connectivity issue.
 
 ## Tools and Protocols
 
+**Tool:**
 - tcpdump
+
+**Protocols:**
 - DNS
 - UDP
 - ICMP
 
-## Key Finding
+## Investigation and Findings
 
-DNS queries sent to the DNS server using UDP port 53 received ICMP Destination Unreachable messages indicating that the UDP destination port was unreachable.
+The packet capture showed DNS queries being sent using UDP to destination port 53.
 
-## Skills Demonstrated
+The DNS requests received ICMP Destination Unreachable messages indicating that UDP port 53 was unreachable.
 
-- Reading and interpreting packet capture logs
-- Identifying source and destination IP addresses
-- Recognizing DNS queries and ICMP error messages
-- Analyzing network connectivity issues
+This prevented successful DNS resolution, affecting users' ability to access the website through its domain name.
 
-## Supporting Documentation
+## Technical Analysis
 
-See the incident report in the `reports` folder.
+The findings indicate a DNS connectivity problem.
 
-## Disclaimer
+The packet capture establishes that the DNS query could not reach an available service at the destination port. However, the exact underlying cause cannot be confirmed from this evidence alone.
 
-This is a simulated training exercise, not an investigation of a real-world incident.# DNS and ICMP Traffic Analysis
+Further investigation should include:
 
-## Overview
-
-A simulated network troubleshooting activity completed as part of the Google Cybersecurity Certificate.
-
-## Objective
-
-Analyze network traffic captured using tcpdump to identify the protocol and service affected by a connectivity issue.
-
-## Tools and Protocols
-
-- tcpdump
-- DNS
-- UDP
-- ICMP
-
-## Key Finding
-
-DNS queries sent to the DNS server using UDP port 53 received ICMP Destination Unreachable messages indicating that the UDP destination port was unreachable.
+- Checking whether the DNS service is running and listening on port 53.
+- Reviewing firewall rules and network filtering configurations.
+- Verifying connectivity between the client and DNS server.
+- Examining DNS server logs for additional errors.
 
 ## Skills Demonstrated
 
-- Reading and interpreting packet capture logs
-- Identifying source and destination IP addresses
-- Recognizing DNS queries and ICMP error messages
-- Analyzing network connectivity issues
+- Network traffic analysis using tcpdump
+- Identifying DNS queries and ICMP error messages
+- Understanding UDP port 53
+- Interpreting packet capture findings
+- Basic network troubleshooting and incident analysis
 
 ## Supporting Documentation
 
-See the incident report in the `reports` folder.
+See the `reports` folder for the original incident report completed during the training activity.
 
 ## Disclaimer
 
-This is a simulated training exercise, not an investigation of a real-world incident.
+This is a simulated cybersecurity training exercise. It does not represent an actual professional incident investigation.

@@ -36,6 +36,26 @@ Use SQL JOIN operations to retrieve related information from multiple database t
 - Connecting employee and machine information
 - Analyzing login activity
 
+## Evidence and Query Results
+
+The following screenshots demonstrate the SQL JOIN operations performed during the investigation.
+
+### 1. INNER JOIN – Employees and Machines
+
+Combines employee records with their assigned machine information using the matching device ID.
+
+### 2. LEFT JOIN – Machines and Employees
+
+Displays all machine records, including machines without an assigned employee.
+
+### 3. RIGHT JOIN – Machines and Employees
+
+Displays all employee records, including employees without an assigned machine.
+
+### 4. INNER JOIN – Employees and Login Attempts
+
+Combines employee information with their associated login activity using matching usernames.
+
 ## Disclaimer
 
 This activity was completed in a simulated training environment as part of the Google Cybersecurity Certificate. It does not represent an actual organizational security investigation.

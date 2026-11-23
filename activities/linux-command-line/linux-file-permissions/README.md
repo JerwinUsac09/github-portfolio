@@ -52,8 +52,7 @@ Removed execute permission from the group, restricting directory traversal to th
 - Applying access restrictions
 - Reviewing permission changes
 
-## Supporting Documentation
-See the `reports` folder for the original file permissions report completed during training.
+See the [Linux File Permissions Report](reports/linux-file-permissions-report.pdf) for the original training report, including terminal screenshots and permission analysis.
 
 ## Disclaimer
 This activity was completed in a simulated training environment as part of the Google Cybersecurity Certificate.

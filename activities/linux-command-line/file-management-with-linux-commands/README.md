@@ -41,7 +41,13 @@ Organize the `/home/analyst` directory by creating and removing directories, mov
 - Filesystem organization
 
 ## Evidence
-See the `screenshots` folder for evidence of the commands executed during the lab.
+
+### File and Directory Management
+![Linux file management commands](screenshots/linux-file-management-commands.png)
+
+### Task Documentation
+![Tasks recorded in tasks.txt](screenshots/linux-task-documentation.png)
+
 
 ## Disclaimer
 This activity was completed in a simulated training environment as part of the Google Cybersecurity Certificate.

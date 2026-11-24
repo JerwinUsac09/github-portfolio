@@ -36,4 +36,8 @@ Risk priority was calculated using the following formula:
 
 Both likelihood and severity were scored on a scale of 1 to 3.
 
+## Supporting Documentation
+
+See the [Commercial Bank Risk Register](reports/commercial-bank-risk-register.pdf) for the completed risk assessment, including the identified risks, scoring results, and risk matrix.
+
 - **Likelihood

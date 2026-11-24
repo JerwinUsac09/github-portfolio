@@ -36,25 +36,32 @@ Use SQL JOIN operations to retrieve related information from multiple database t
 - Connecting employee and machine information
 - Analyzing login activity
 
+
 ## Evidence and Query Results
 
-The following screenshots demonstrate the SQL JOIN operations performed during the investigation.
+### 1. INNER JOIN – Employees and Login Attempts
 
-### 1. INNER JOIN – Employees and Machines
+Combined employee records with login attempt records using matching usernames. This query returned 200 matching records.
 
-Combines employee records with their assigned machine information using the matching device ID.
+![INNER JOIN employees and login attempts](screenshots/inner-join-login-attempts.png)
 
-### 2. LEFT JOIN – Machines and Employees
+### 2. INNER JOIN – Machines and Employees
 
-Displays all machine records, including machines without an assigned employee.
+Matched machine records with employee records using the device ID column to identify assigned machines.
 
-### 3. RIGHT JOIN – Machines and Employees
+![INNER JOIN machines and employees](screenshots/inner-join-machines-employees.png)
 
-Displays all employee records, including employees without an assigned machine.
+### 3. LEFT JOIN – Machines and Employees
 
-### 4. INNER JOIN – Employees and Login Attempts
+Retrieved all machine records, including machines without a matching employee record. Unmatched employee information appears as NULL.
 
-Combines employee information with their associated login activity using matching usernames.
+![LEFT JOIN machines and employees](screenshots/left-join-machines-employees.png)
+
+### 4. RIGHT JOIN – Machines and Employees
+
+Retrieved all employee records, including employees without an assigned machine. The results included an employee record with NULL machine information.
+
+![RIGHT JOIN machines and employees](screenshots/right-join-machines-employees.png)
 
 ## Disclaimer
 

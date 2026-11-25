@@ -87,7 +87,21 @@ This demonstrated how analysts can filter structured security logs and focus on 
 - Identifying relevant network traffic information
 
 ## Evidence
-Selected terminal screenshots demonstrating rule configuration, Suricata execution, and alert analysis will be included in the `screenshots` folder.
+
+### Custom Suricata Rule
+![Custom Suricata detection rule](screenshots/custom-suricata-rule.png)
+
+### Suricata PCAP Execution
+![Suricata processing the sample PCAP](screenshots/suricata-pcap-execution.png)
+
+### EVE JSON Alert Analysis
+![Suricata EVE JSON alert details](screenshots/suricata-eve-json-alerts.png)
+
+### fast.log Alert Analysis
+![Suricata fast.log alerts](screenshots/suricata-fast-log-alerts.png)
+
+### JSON Filtering with jq
+![Filtering Suricata JSON events using jq](screenshots/jq-json-analysis.png)
 
 ## Disclaimer
 This activity was completed in a simulated training environment using a supplied packet capture file. The alerts demonstrate rule matching and network monitoring, not the detection of a confirmed malicious attack.

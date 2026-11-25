@@ -53,7 +53,7 @@ Automate the process of updating an IP allow list using Python file handling, co
 
 ## Supporting Documentation
 
-See the `reports` folder for the completed activity report and code explanations.
+See the [Python IP Allow List Management Report](reports/update-a-file-through-python-algorithm.pdf) for the original activity documentation, including the Python code and explanations.
 
 ## Disclaimer
 This activity was completed as part of the Google Cybersecurity Certificate in a simulated training environment. It demonstrates an allow list management algorithm and does not represent an actual production network access-control implementation.
